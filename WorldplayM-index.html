@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Worldplay Mobile</title>
+    <script src="https://kit.fontawesome.com/c7cca00b97.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <style>
+      :root {
+        /* size */
+        --side-padding: 12px;
+        --icon-size: 36px;
+
+        /* font size */
+        --font-large: 20px;
+        --font-medium: 14px;
+        --font-small: 12px;
+        --font-micro: 10px;
+      }
+
+     a:link { color: rgb(66, 197, 188); text-decoration: none;}
+     a:visited { color: rgb(66, 197, 188); text-decoration: none;}
+     a:hover { color: rgb(66, 197, 188); text-decoration: none;}
+
+
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        list-style: none;
+      }
+
+      body {
+        font-family: 'Roboto Mono', monospace;
+        -ms-overflow-style: none;
+      }
+
+      /* 스크롤 기능은 살리고 스크롤바 안보이게 하기*/
+
+      ::-webkit-scrollbar {
+        display: none;
+      }
+
+    ul {
+      list-style:none;
+      margin:0;
+      padding:0;
+      height: 50px;
+      width: 100%;
+      position: relative;
+    }
+
+    li {
+      margin: 0 0 0 0;
+      padding: 0 0 0 0;
+      border : 0;
+      position:relative;
+      height:100%;
+      width: 150px;
+      float:left;
+      color: grey;
+    }
+
+
+      header {
+        display: flex;
+        justify-content: space-between;
+        padding: var(--side-padding);
+        background-color: white;
+        color:rgb(66, 197, 188);
+      }
+
+      header .logo {
+        font-size: var(--font-large);
+        margin: 0 auto;
+      }
+
+      header .logo img {
+        color:rgb(66, 197, 188);
+      }
+
+      .logo {
+        display: inline;
+        margin-top: 0;
+      }
+
+      .icons {
+        display: inline;
+       }
+
+      .icons img {
+        display: inline-block;
+        width: 32px;
+        height: 32px;
+        margin-right: var(--side-padding);
+      }
+
+      .slider {
+        width: 100%;
+        position:relative;
+        top: 100px;
+      }
+
+      .slider_items {
+        width: 100%;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: mint;
+        position: absolute;
+        top: 61px;
+        z-index: 0;
+        background-color: aquamarine;
+      }
+
+      .showing {
+        z-index: 1;
+      }
+
+      article .categories {
+        position: relative;
+        float: left;
+        top: 301px;
+        list-style: none;
+        color:black;
+      }
+
+      article .thumbnail {
+        display: flex;
+        position: absolute;
+        top: 400px;
+        margin-left: 10px;
+      }
+
+/*
+      section .gametitle{
+        display: flex;
+        position: relative;
+        top:301px;
+        list-style: none;
+        justify-content: space-around;
+      }
+*/
+      article .title_description {
+          display: flex;
+          flex-direction: column;
+          position: absolute;
+          top: 400px;
+          left: 170px;
+      }
+
+      article .title_description span {
+        color:black;
+      }
+
+      article .description{
+        font-size: 12px;
+      }
+
+      article .categories2 {
+        position: absolute;
+        float: left;
+        top: 600px;
+        list-style: none;
+        color:black;
+      }
+
+      article .thumbnail2 {
+        display: flex;
+        position: absolute;
+        top: 640px;
+        margin-left: 10px;
+      }
+
+      article .title_description2 {
+          display: flex;
+          flex-direction: column;
+          position: absolute;
+          top: 640px;
+          left: 170px;
+      }
+
+      article .title_description2 span {
+        color: black;
+      }
+
+  .actions {
+    position: absolute;
+    top: 800px;
+    display: flex;
+    justify-content: space-around;
+    margin: var(--side-padding) 0;
+  }
+
+  .actions i {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+    margin-bottom: var(--side-padding);
+    color:rgb(66, 197, 188);
+  }
+
+
+    </style>
+  </head>
+
+  <body>
+    <!--header-->
+    <header>
+      <div class="logo">
+        <i class="favi-worldplay"></i>
+        <span class="title">Worldplay</span>
+      </div>
+      <div class="icons">
+        <a href="https://tech.worldplay.kr/metrojoseonwp/metroJoseon_aunlockcode.html"><img src="ticket-alt-solid.svg" /></a>
+      </div>
+    </header>
+
+    <!--event slider-->
+    <section>
+      <div class="slider"></div>
+        <div class="slider_items">조선메트로3호선 베타월드 오픈</div>
+        <!--
+        <div class="slider_items">명동에서 명동의연인과 놀아보자</div>
+        <div class="slider_items">카톡에서 삼봉을 만났다?</div>
+      -->
+    </section>
+
+    <!--game list-->
+    <article>
+      <div class="categories">
+        <span><h2>#도심에서 즐기는 월드플레이</h2></span>
+      </div>
+    </article>
+
+    <article>
+      <div class="thumbnail">
+        <a href="https://tech.worldplay.kr/metrojoseonwp/metroJoseon_index.html"><img src="정도전초상화.jpg" style="width:150px; height:150px; border-radius: 7px;" /></a>
+      </div>
+      <article class="title_description">
+        <div class="gametitle">
+          <a href="https://tech.worldplay.kr/metrojoseonwp/metroJoseon_index.html"><span><h3>조선메트로3호선</h3></span></a>
+        </div>
+        <div class="description">
+          <a href="https://tech.worldplay.kr/metrojoseonwp/metroJoseon_index.html"><span>삼봉 정도전을 도와 조선을 설계하라</span></a>
+        </div>
+      </article>
+    </article>
+
+    <article>
+      <div class="categories2">
+        <span><h2>#집에서 안전하게 몰입하자</h2></span>
+      </div>
+    </article>
+
+    <article>
+      <div class="thumbnail2">
+        <a href="https://tech.worldplay.kr/metrojoseonwp/metroJoseon_index.html"><img src="로텐부르크시계탑.jpeg" style="width:150px; height:150px; border-radius: 7px;" /></a>
+      </div>
+      <article class="title_description2">
+        <div class="gametitle">
+          <a href="https://tech.worldplay.kr/metrojoseonwp/metroJoseon_index.html"><span><h3>S의 박물관</h3></span></a>
+        </div>
+        <div class="description">
+          <a href="https://tech.worldplay.kr/metrojoseonwp/metroJoseon_index.html"><span>모든 기록과 이야기의 안식처, 경험하는 박물관 몽샤토와 함께 하시겠습니까?</span></a>
+        </div>
+      </article>
+    </article>
+
+    <!---content buttons-->
+  <div class="actions">
+    <ul>
+      <li>
+        <a href="https://tech.worldplay.kr/WorldplayMobile/WorldplayM-index.html"><i class="fas fa-home"><span>홈</span></i></a>
+      </li>
+      <li>
+        <i class="fas fa-suitcase"><span>인벤토리</span></i>
+      </li>
+      <li>
+        <i class="far fa-comments"><span><h4>커뮤니티</h4></span></i>
+      </li>
+      <li>
+        <i class="far fa-user"><span><h4>계정</h4></span></i>
+      </li>
+    </ul>
+  </div>
+  <!--
+    <div class="homebtn"></div>
+    <div class="inventorybtn"></div>
+    <div class="communitybtn"></div>
+    <div class="accountbtn"></div>
+--->
+
+<!--
+    <script>
+      const SHOWING_CLASS = "showing";
+      const firstSlide = document.querySelector(".slider_items:first-child");
+        현재 슬라이더를 넘기고 그 다음 슬라이더로 넘어가는 함수
+      function slide() {
+        const currentSlide = document.querySelector(`.${SHOWING_CLASS}`);
+        if(currentSlide) {
+          currentSlide.classList.remove(SHOWING_CLASS);
+          const nextSlide = currentSlide.nextElementSibling;
+            if(nextSlide) {
+              nextSlide.classList.add(SHOWING_CLASS);
+            } else {
+              firstSlide.classList.add(SHOWING_CLASS);
+          }
+        } else {
+          firstSlide.classList.add(SHOWING_CLASS);
+        }
+      }
+      slide();
+      setInterval(slide, 2000);
+    </script>
+-->
+  </body>
+</html>
