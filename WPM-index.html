@@ -45,6 +45,8 @@
       body {
         font-family: 'Roboto Mono', monospace;
         -ms-overflow-style: none;
+        display: flex;
+        flex-direction: column;
       }
 
       /* 스크롤 기능은 살리고 스크롤바 안보이게 하기*/
@@ -198,9 +200,12 @@
         color: black;
       }
 
-  footer .actions {
-    position: fixed;
-    bottom: 0;
+  footer {
+    flex-shrink: 0;
+      }
+      
+  .actions {
+    position: absolute;
     top: 800px;
     display: flex;
     justify-content: space-around;
