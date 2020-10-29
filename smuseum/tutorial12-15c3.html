@@ -1,0 +1,36 @@
+<!---채용미션 선택페이지 큐알코드를 통해서든 카톡채널을 통해서든 여기로 온다--->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>월드플레이 - 인터랙티브 스토리게임 플랫폼 | S의 박물관</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="game-title">
+      <h1>준학예사 자격시험 : 조선전기 세번째 문제</h1>
+    </div>
+    <div class="game-scene">
+      <div class="box">
+      <p style="padding:60px;">세종이 1447년 중시에서 장원을 가르기 위해 낸 주제는 무엇인가? <!---팔준도---></p> <br>
+      <div class="action">
+        <form name="form_id" autocomplete="off">
+          <input name=textbox_id type="text" id="answer" placeholder="입력하세요." autocomplete="off"> <br><br>
+          <button type="button" name="button" onclick="go();">다음으로</button> <br><br>
+        </form>
+      </div>
+    </div>
+
+    <script>
+    function go(){
+    if(document.form_id.textbox_id.value === "팔준도"){
+      window.location.href="tutorial12-15c4.html";//현재페이지의 주소를 해당페이지로 바꿉니다.
+    }else{
+      location.href="tutorial12-15c3.html";
+      }
+    };
+    </script>
+
+  </body>
+
+</html>

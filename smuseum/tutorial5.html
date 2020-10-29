@@ -1,0 +1,41 @@
+<!---프론트데스크를 선택할 시--->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>월드플레이 - 인터랙티브 스토리게임 플랫폼 | S의 박물관</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="game-title">
+      <h1>박물관 프론트데스크</h1>
+    </div>
+    <div class="game-scene">
+      <br><br>
+      프론트데스크 쪽에 왔다. <br><br>
+      <img width="490px" height="450px" src="프론트데스크.jpeg" alt="프론트데스크"><br>
+      아담해서 데스크 주변이 한눈에 다 보인다.<br>
+      데스크 주변에는 팸플릿, 벽쪽에는 전시 포스터와 무언가가 붙어있다.<br><br>
+    </div>
+    <div class="action">
+      <button type="button" name="button" onclick="go();">팸플릿을 살펴본다</button> <br><br>
+      <button type="button" name="button" onclick="go2();">전시포스터를 살펴본다</button> <br><br>
+      <button type="button" name="button" onclick="go3();">벽에 붙은 하얀 종이를 살펴본다</button> <br><br>
+    </div>
+
+    <script type="text/javascript">
+        function go(){
+          location.replace("tutorial8.html");
+        }
+
+        function go2(){
+          location.replace("tutorial9.html");
+        }
+
+        function go3(){
+          location.replace("tutorial10.html");
+        }
+    </script>
+  </body>
+
+</html>

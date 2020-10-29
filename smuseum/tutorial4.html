@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>월드플레이 - 인터랙티브 스토리게임 플랫폼 | S의 박물관</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="game-title">
+      <h1>박물관에 들어서다</h1>
+    </div>
+    <div class="game-scene">
+      <br><br>
+      이야기 박물관이라는게 대체 뭐야? <br>
+      궁금해서 들어섰다.<br><br>
+
+      '어서오세요~'<br><br>
+      "어....음...."<br><br>
+      '관람하러 오셨나요?'<br><br>
+
+      관람하러 왔다기엔 의외로 너무 평범한 공간.<br>
+      내부는 박물관보다는 도서관에 가까운 느낌이다. <br><br>
+
+      "무얼 전시하는 곳이죠?" <br><br>
+      '이름 그대로 이야기와 기록을 전시하고 있어요.'<br><br>
+      그건 그러니까 대체적인 박물관들이 하고 있는 일인 것 같은데요?<br><br>
+      '한번 둘러보실래요?'<br><br>
+      ....바쁘지도 않은데, 그럼 둘러볼까?<br><br><br>
+
+    </div>
+    <div class="action">
+      <div class="selection-wrapper">
+        <br>
+        <h3>어디로 갈까?</h3><br>
+        <button type="button" name="button" onclick="go2();">상설전시실</button> <br><br>
+        <button type="button" name="button" onclick="go3();">특별전시실</button> <br><br>
+        <button type="button" name="button" onclick="go();">프론트데스크</button> <br><br>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+        function go(){
+          location.replace("tutorial5.html");
+        }
+
+        function go2(){
+          location.replace("tutorial6.html");
+        }
+
+        function go3(){
+          location.replace("tutorial7.html");
+        }
+    </script>
+  </body>
+
+</html>

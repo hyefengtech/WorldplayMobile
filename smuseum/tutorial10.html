@@ -1,0 +1,37 @@
+<!---벽에 붙은 하얀종이를 살펴본다를 선택할 시--->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>월드플레이 - 인터랙티브 스토리게임 플랫폼 | S의 박물관</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="game-title">
+      <h1>하얀 종이를 확인하다</h1>
+    </div>
+    <div class="game-scene">
+      <br><br>
+      2020년 준학예사 채용공고....??!!<br><br>
+<!-- 채용공고가 들어가는 자리
+      채용공고 내용<br><br> // 채용공고는 약간 포토샵이나 그림작업으로 진짜 공고문인 것처럼 그림을 넣기
+      자세한 사항은 admission@monchateau.worldplay.co.kr 로 메일주세요. // 이것도 채용공고 그림에 들어감 <br><br>
+--->
+      <img width="490px" height="630px" src="박물관채용공고.jpeg" alt="박물관채용공고" /><br><br>
+      <p style="display:block;">박물관에서 준학예사 인턴을 <!---<span onclick="location.href='tutorial11.html'" style="cursor:pointer;">모집</span>-->모집한다는 글이다.</p> <br>
+
+      이건.... 지금 절박한 내 상황을 반전시킬 기회라고 생각한다! <br><br>
+    </div>
+    <div class="action">
+      <button type="button" name="button" onclick="go();">지원하기(QR코드스캔)</button><br>
+      <button type="button" name="button"><a href="mailto:monchateau.wp@gmail.com?subject=준학예사채용지원&body=자격시험을_치르겠습니다" style="text-decoration:none;color:black;cursor:default;">지원하기(응시지원 메일보내기)</a></button>
+    </div>
+
+    <script type="text/javascript">
+        function go(){
+          location.replace("tutorial13.html");
+        }
+    </script>
+  </body>
+
+</html>
