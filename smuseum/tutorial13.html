@@ -1,0 +1,30 @@
+<!---벽에 붙은 하얀종이를 살펴본다를 선택할 시--->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>월드플레이 - 인터랙티브 스토리게임 플랫폼 | S의 박물관</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="game-title">
+      <h1>QR코드로 채용에 지원하다</h1>
+    </div>
+    <div class="game-scene">
+      <br><br>
+      <img style="position:relative;" width="700px" height="630px" src="박물관채용공고확대.jpeg" alt="박물관채용공고확대" /><br><br>
+      <img style="position:absolute; top: 350px; left: 930px;" width="110px" height="110px" src="채용지원큐알코드.jpg" alt="채용지원큐알코드" />
+      공고에 자세히 보니 QR코드가 있다. <br> 지원을 위한 자격시험을 치르려면 한번 스캔해볼까? <br><br>
+    </div>
+    <div class="action">
+      <button type="button" name="button" onclick="go();">QR코드 스캔완료</button><br>
+    </div>
+
+    <script type="text/javascript">
+        function go(){
+          location.replace("tutorial11.html");
+        }
+    </script>
+  </body>
+
+</html>
