@@ -17,7 +17,7 @@
       <br><br>
     <div class="action">
       <div id="reader"></div>
-      <input type="file" id="qr-input-file" accept="image/*"> <br />
+      <input type="file" id="qr-input-file" accept="image/*"> <br /><br/>
 <!--
   Or add captured if you only want to enable smartphone camera, PC browsers will ignore it.
 
@@ -39,7 +39,15 @@
  *              errors.
 */
 scanFile(imageFile, showImage /* default = true */) {} -->
+      <button type="button" name="button" onclick="go();">돌아간다</button> 
    </div>
+    
+     <script type="text/javascript">
+        function go(){
+          location.replace("tutorial13.html");
+        }
+    </script>
+ 
 <script>
   const html5QrCode = new Html5Qrcode(/* element id */ "reader");
 
