@@ -8,15 +8,6 @@
     <style>
     @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR&display=swap');
     </style>
-     <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-177238695-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-177238695-1');
-</script>
   </head>
   <body>
     <div class="game-title">
@@ -25,17 +16,23 @@
     <div class="game-scene">
       <br><br>
       <img style="position:relative;" width="700px" height="630px" src="박물관채용공고확대.jpeg" alt="박물관채용공고확대" /><br><br>
-      <img style="position:absolute; top: 350px; left: 670px;" width="110px" height="110px" src="채용지원큐알코드.jpg" alt="채용지원큐알코드" />
+      <img style="position:absolute; top: 350px; left: 830px;" width="110px" height="110px" src="채용지원큐알코드.jpg" alt="채용지원큐알코드" />
       공고에 자세히 보니 QR코드가 있다. <br> 지원을 위한 자격시험을 치르려면 한번 스캔해볼까? <br><br>
     </div>
     <div class="action">
-      <button type="button" name="button" onclick="go();">QR코드 스캔완료</button><br>
+      <button type="button" name="button" onclick="go();">QR코드를 스캔한다(PC와 모바일 함께 사용)</button><br>
+      <button type="button" name="button" onclick="go2();">QR코드를 스캔한다(모바일만 사용)</button><br>
     </div>
 
     <script type="text/javascript">
         function go(){
-          location.replace("tutorial11.html");
+          location.replace("tutorial13-1.html");
         }
+
+        function go2(){
+          location.replace("tutorial13-2.html");
+        }
+
     </script>
   </body>
 
