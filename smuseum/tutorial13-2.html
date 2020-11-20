@@ -2,17 +2,27 @@
 <html lang="ko" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>월드플레이 - 인터랙티브 스토리게임 플랫폼 | S의 박물관</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR&display=swap');
+    </style>
     <script src="html5-qrcode.min.js"></script>
   </head>
   <body>
-    <div id="reader"></div>
-    <input type="file" id="qr-input-file" accept="image/*">
+    <div class="game-title">
+      <h1>QR코드로 채용에 지원하다</h1>
+    </div>
+    <div class="game-scene">
+      <br><br>
+    <div class="action">
+      <div id="reader"></div>
+      <input type="file" id="qr-input-file" accept="image/*"> <br />
 <!--
   Or add captured if you only want to enable smartphone camera, PC browsers will ignore it.
 -->
 
-    <input type="file" id="qr-input-file" accept="image/*" capture>
+      <input type="file" id="qr-input-file" accept="image/*" capture>
 
 <!--
  * Scans an Image File for QR Code.
@@ -30,7 +40,7 @@
  *              errors.
 */
 scanFile(imageFile, showImage /* default = true */) {} -->
-
+   </div>
 <script>
   const html5QrCode = new Html5Qrcode(/* element id */ "reader");
 
