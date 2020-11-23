@@ -1,10 +1,14 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>:: jsQR 테스트 ::</title>
-// 다운받은 jsQR.js 를 사용한다.
+<title>월드플레이 - 인터랙티브 스토리게임 플랫폼</title>
 <script type="text/javascript" src="jsQR.js"></script>
 <style type="text/css">
+	body {
+	       margin: 0;
+	       padding: 0;	
+	}
+	
 	main {
 		width:100%;
 		height:100%;
@@ -25,7 +29,7 @@
 		width:49%;
 	}
 
-	div#output {
+	/* div#output {
 		background-color:#BDBEBD;
 		padding-left:10px;
 		padding-right:10px;
@@ -43,13 +47,14 @@
 		padding-top:8px;
 		padding-bottom:8px;
 	}
-
+*/
 	div#outputLayer {
 		text-align:left;
 	}
 
 	canvas {
-		width:100%;
+		width:100vw;
+		height:100vh;
 	}
 </style>
 </head>
@@ -59,7 +64,6 @@
 		<h1>QR 코드 리더</h1>
 		<div id="output">
 			<div id="outputMessage">
-				QR코드를 카메라에 노출시켜 주세요
 			</div>
     		<div id="outputLayer" hidden>
     			<span id="outputData"></span>
@@ -73,7 +77,7 @@
 		<h1>스캔</h1>
 		<div id="frame">
 			<div id="loadingMessage">
-				🎥 비디오 스트림에 액세스 할 수 없습니다<br/>웹캠이 활성화되어 있는지 확인하십시오
+			<!--🎥 비디오 스트림에 액세스 할 수 없습니다<br/>웹캠이 활성화되어 있는지 확인하십시오-->
 			</div>
 			<canvas id="canvas"></canvas>
 		</div>
@@ -114,7 +118,7 @@
 
 		function tick() {
 
-			loadingMessage.innerText = "⌛ 스캔 기능을 활성화 중입니다."
+			//loadingMessage.innerText = "⌛ 스캔 기능을 활성화 중입니다."
 
 			if(video.readyState === video.HAVE_ENOUGH_DATA) {
 
