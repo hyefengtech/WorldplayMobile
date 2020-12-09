@@ -45,8 +45,6 @@
       body {
         font-family: 'Roboto Mono', monospace;
         -ms-overflow-style: none;
-        display:flex;
-        flex-direction: column;
       }
 
       /* 스크롤 기능은 살리고 스크롤바 안보이게 하기*/
@@ -132,11 +130,12 @@
       .showing {
         z-index: 1;
       }
- 
-      .content {
-        flex: 1 0 auto;
       
-      } 
+      .content {
+        min-height: 100%;
+        margin: 0 auto -80px;
+      }
+ 
       article .categories {
         position: relative;
         float: left;
@@ -238,7 +237,6 @@
         position: fixed;
         bottom:0;
         width: 100%;
-        flex-shrink: 0;
         overflow: hidden;
       }     
       
@@ -258,7 +256,9 @@
     margin-bottom: var(--side-padding);
     color:rgb(66, 197, 188);
   }
-    
+      .push {
+        height: 80px;
+      }
 
     </style>
   </head>
@@ -347,7 +347,7 @@
       </article>
     </article>
     
-    <div style="clear:both;"></div> 
+    <div class="push" style="clear:both;"></div> 
   </main>
     <!---content buttons-->
  <footer class="footer">
