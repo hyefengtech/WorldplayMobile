@@ -1,5 +1,14 @@
 // Set constraints for the video stream
 var constraints = { video: { facingMode: "environment" }, audio: false };
+
+const hdConstraints = {
+    video: { width: { min: 1280 }, height: { min: 720 } },
+  };
+  
+  navigator.mediaDevices.getUserMedia(hdConstraints).then((stream) => {
+    video.srcObject = stream;
+  });
+
 // Define constants
 const cameraView = document.querySelector("#camera--view"),
     cameraOutput = document.querySelector("#camera--output"),
