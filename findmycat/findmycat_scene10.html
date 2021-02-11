@@ -1,0 +1,63 @@
+<!-- 책상 위에는 서거정의 일기가 펼쳐져 있으며 일기를 넘겨볼 수 있다. -->
+<!-- 병아리를 얻은 내용이 적혀 있다.  -->
+<!-- 오원자와 관련된 에피소드 하나도 적혀 있다  -->
+<!-- 성종이 엄하게 질책한 실록의 기사도 같이 적혀 있다. 실록기사img에 AR객체 올려서 "억울" 이라는 글자가 떠오르게 한다 -->
+<!-- 퀴즈: 일기들을 돌아보니 뭔가 끓어오른다. 지금 나의 심정은? -->
+
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      월드플레이 - 고양이를 찾아줘 | 인터랙티브 스토리텔링 몰입경험콘텐츠 플랫폼
+    </title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap"
+      rel="stylesheet"
+    />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div id="game-title">
+      <h1>책상 위를 살펴보았다</h1>
+    </div>
+    <br />
+    <br />
+    <div class="game-scene">
+      <p>
+        책상 위에는 내 일기장이 있다.<br /><br />
+        <br />
+      </p>
+      <br /><br />
+    </div>
+
+    <div class="action">
+      <button
+        type="button"
+        class="btn btn-primary"
+        name="button"
+        onclick="go();"
+      >
+        일기장을 펴본다</button
+      ><br /><br />
+    </div>
+
+    <script>
+      function go() {
+        window.location.href = "findmycat_scene11.html";
+      }
+    </script>
+  </body>
+</html>

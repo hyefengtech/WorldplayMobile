@@ -1,0 +1,118 @@
+<!--- AR카메라를 통해 성종실록에 숨겨진 비밀을 찾아낸다-->
+<!-- AR 카메라로 pdf파일에서 비밀을 찾아내면 다음으로 넘어가는 버튼을 통해 정답입력 칸이 나온다-->
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      월드플레이 - 고양이를 찾아줘 | 인터랙티브 스토리텔링 몰입경험콘텐츠 플랫폼
+    </title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .action,
+      #start-button {
+        display: grid;
+        justify-content: center;
+      }
+
+      .action button {
+        display: grid;
+        justify-content: center;
+        font-size: 14px;
+        border: 0.5px solid transparent;
+        background-image: linear-gradient(#fbfcb9be, #ffcdf3aa),
+          linear-gradient(to right, #fbfcb9be, #ffcdf3aa);
+        background-origin: border-box;
+        margin: 20px;
+        border-radius: 0.5em;
+        padding: 0.6em 0.3em; /* 원하는 여백 설정, 상하단 여백으로 높이를 조절 */
+        font-family: inherit;
+        width: 100%;
+        color: rgb(60, 60, 61);
+        z-index: 10;
+      }
+
+      button:focus {
+        outline: 0 !important;
+      }
+
+      button:active {
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);
+      }
+    </style>
+
+    <script src="https://cdn.jsdelivr.net/gh/aframevr/aframe@1c2407b26c61958baa93967b5412487cd94b290b/dist/aframe-master.min.js"></script>
+    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
+  </head>
+  <body>
+    <div id="game-title">
+      <h1>성종실록기사 AR</h1>
+    </div>
+    <br />
+    <br />
+    <div class="game-scene">
+      <!---
+      <div class="arjs-loader">
+        <p>
+          Now Loading...<br />
+          Please prepare the marker image :)
+        </p>
+      </div>
+-->
+      <div class="action">
+        <button
+          type="button"
+          class="btn btn-primary"
+          name="button"
+          onclick="go();"
+        >
+          감정을 찾았다</button
+        ><br /><br />
+      </div>
+      <a-scene
+        vr-mode-ui="enabled: false;"
+        renderer="logarithmicDepthBuffer: true;"
+        embedded
+        arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;"
+      >
+        <a-nft
+          type="nft"
+          url="findmycat/src/nft/9-18"
+          smooth="true"
+          smoothCount="10"
+          smoothTolerance="0.01"
+          smoothThreshold="5"
+        >
+          <a-box
+            position="100 0.5 -180"
+            material="opacity: 0.5; side: double"
+            scale="100 100 100"
+          ></a-box>
+        </a-nft>
+        <a-entity camera></a-entity>
+      </a-scene>
+      <p><br /><br /><br /></p>
+      <br /><br />
+    </div>
+
+    <script>
+      function go() {
+        window.location.href = "findmycat_scene18.html";
+      }
+    </script>
+  </body>
+</html>
