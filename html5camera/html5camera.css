@@ -47,8 +47,6 @@ body {
 
  #overlay {
    position: fixed;
-   bottom: 0;
-   right: 0;
    object-fit: contain;
    z-index: 1;
   }
