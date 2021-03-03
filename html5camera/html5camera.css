@@ -33,6 +33,7 @@ body {
   position: fixed;
   bottom: 30px;
   left: calc(50% - 100px);
+  z-index: 3;
 }
 .taken {
   height: 100% !important; /*100px !important;*/
@@ -46,7 +47,7 @@ body {
 }
 
  #overlay {
-   position: fixed;
+   position: absolute;
    object-fit: contain;
    z-index: 1;
   }
