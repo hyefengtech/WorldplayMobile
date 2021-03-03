@@ -44,3 +44,8 @@ body {
   right: 20px;*/
   z-index: 2;
 }
+
+#overlay {
+  position: fixed;
+  bottom: 35px;
+}
