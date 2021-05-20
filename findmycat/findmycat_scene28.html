@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      월드플레이 - 고양이를 찾아줘 | 인터랙티브 스토리텔링 몰입경험콘텐츠 플랫폼
+    </title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap"
+      rel="stylesheet"
+    />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div id="game-title">
+      <h1>놓친 단서 재확인</h1>
+    </div>
+    <br />
+    <br />
+
+    <div class="game-scene">
+      <p>
+        너무 급하게 보느라 놓친 것이 있는 것 같다. <br />
+        '그 장소'로 다시 가서 확인해보자
+        <br />
+        <br /><br />
+      </p>
+      <form name="form_id">
+        <input
+          name="textbox_id"
+          type="text"
+          id="answer"
+          placeholder="장소를 입력하세요."
+        />
+        <br />
+        <br />
+      </form>
+      <div class="action">
+        <button
+          type="button"
+          class="btn btn-primary"
+          name="button"
+          onclick="To_Noname();"
+          value="이동"
+        >
+          입력
+        </button>
+        <br />
+        <br />
+      </div>
+    </div>
+  </body>
+
+  <script language="javascript">
+    function To_Noname() {
+      if (document.form_id.textbox_id.value === "고양이집") {
+        window.location.href = "findmycat_scene29.html"; //현재페이지의 주소를 해당페이지로 바꿉니다.
+      } else {
+        window.location.href = "findmycat_error2.html";
+      }
+    }
+  </script>
+</html>

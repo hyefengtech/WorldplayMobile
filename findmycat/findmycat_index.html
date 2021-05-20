@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      월드플레이 - 고양이를 찾아줘 | 인터랙티브 스토리텔링 몰입경험콘텐츠 플랫폼
+    </title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap"
+      rel="stylesheet"
+    />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <header>
+      <div id="title">
+        <!-- 가운데 정렬용 div -->
+        <h2>고양이를 찾아줘</h2>
+        <h1>고양이를 찾아줘</h1>
+      </div>
+    </header>
+
+    <br />
+    <br />
+    <img src="src/오원자실루엣.png" style="max-width: 80%; height: auto; margin-left: 10%;" alt="고양이실루엣">
+    <br />
+    <br />
+
+    <article>
+      <div id="game-info">
+        <span>Mobile / 장소무관</span>
+        <span>30분 내외 소요</span>
+      </div>
+
+      <br />
+
+      <div id="synopsis">
+        <p>
+          "가출한다옹-" 이 쪽지 하나만 남기고 소중한 고양이가 사라졌다. <br />
+          대체 왜??!!
+        </p>
+        <br /><br />
+      </div>
+
+      <div class="action">
+        <button type="button" name="button" onclick="go();">시작하기</button>
+      </div>
+    </article>
+
+    <script>
+      function go() {
+        window.location.href = "findmycat_scene1.html";
+      }
+    </script>
+  </body>
+</html>

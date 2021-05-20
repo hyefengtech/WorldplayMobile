@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      월드플레이 - 고양이를 찾아줘 | 인터랙티브 스토리텔링 몰입경험콘텐츠 플랫폼
+    </title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap"
+      rel="stylesheet"
+    />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div id="game-title">
+      <h1>지팡이를 발견했다</h1>
+    </div>
+    <br />
+    <br />
+    <div class="game-scene">
+      <img
+        src="src/지팡이.png"
+        style="width: 300px; height: 400px"
+        alt="지팡이"
+      /><br /><br />
+      <p>
+        이 지팡이는 몸이 약한 내가 항상 나의 분신처럼 들고 다니는 것이다.
+        <br /><br /><br />
+      </p>
+      <!---지팡이 그림 떠오름-->
+      <br /><br />
+    </div>
+
+    <div class="action">
+      <button
+        type="button"
+        class="btn btn-primary"
+        name="button"
+        onclick="go();"
+      >
+        단서를 찾아 더 둘러본다</button
+      ><br /><br />
+    </div>
+
+    <script>
+      function go() {
+        window.location.href = "findmycat_scene20.html";
+      }
+    </script>
+  </body>
+</html>

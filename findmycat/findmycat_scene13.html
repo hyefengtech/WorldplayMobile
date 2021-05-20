@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      월드플레이 - 고양이를 찾아줘 | 인터랙티브 스토리텔링 몰입경험콘텐츠 플랫폼
+    </title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap"
+      rel="stylesheet"
+    />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div id="game-title">
+      <h1>일기장을 펼쳤다</h1>
+    </div>
+    <br />
+    <br />
+    <div class="game-scene">
+      <p>
+        어떤 페이지를 읽어볼까?<br /><br />
+        <br />
+      </p>
+      <br /><br />
+    </div>
+
+    <div class="action">
+      <button
+        style="background: rgb(60, 60, 61); color: white"
+        disabled
+        type="button"
+        class="btn btn-primary"
+        name="button"
+        onclick="go();"
+      >
+        일기장을 펴본다
+      </button>
+      <button
+        style="background: rgb(60, 60, 61); color: white"
+        disabled
+        type="button"
+        class="btn btn-primary"
+        name="button"
+        onclick="go2();"
+      >
+        병아리를 얻었다
+      </button>
+      <button
+        type="button"
+        class="btn btn-primary"
+        name="button"
+        onclick="go3();"
+      >
+        비바람 치던 어느날
+      </button>
+      <!----    <button
+        style="background: rgb(60, 60, 61); color: white"
+        disabled
+        type="button"
+        class="btn btn-primary"
+        name="button"
+        onclick="go4();"
+      >
+        일을 그만두게 되다</button
+      ><br /><br />
+---->
+    </div>
+
+    <script>
+      function go() {
+        window.location.href = "findmycat_scene11.html";
+      }
+      function go2() {
+        window.location.href = "findmycat_scene12.html";
+      }
+      function go3() {
+        window.location.href = "findmycat_scene14.html";
+      }
+      function go4() {
+        window.location.href = "findmycat_scene16.html";
+      }
+    </script>
+  </body>
+</html>

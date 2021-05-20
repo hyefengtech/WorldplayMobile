@@ -1,0 +1,84 @@
+<!--고양이가 할퀸 흔적이 있는 훈민정음 해례본의 자음배치도 -->
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      월드플레이 - 고양이를 찾아줘 | 인터랙티브 스토리텔링 몰입경험콘텐츠 플랫폼
+    </title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap"
+      rel="stylesheet"
+    />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div id="game-title">
+      <h1>바닥에 떨어져 있던 종이조각</h1>
+    </div>
+    <br />
+
+    <div class="game-scene">
+      <img
+        src="src/훼손된훈민정음해례본.jpg"
+        style="max-width: 100%; height: auto"
+        alt="고양이에 의해 훼손된 해례본"
+      /><br /><br />
+      <p>
+        앗, 이것은 훈민정음 해례본의 자모음 원리도인데? <br />
+        이걸 누가 뜯은 거야?!!
+        <br />
+        그리고 이렇게 발자국을 남겨놓다니!!<br />
+        냥이의 짓이 분명하긴 한데, 이걸 건드린데는 무슨 까닭이 있어서가 아닐까?
+        <br /><br /><br />
+        여기에 담긴 냥이의 메시지는? [영문 대문자]
+      </p>
+      <br /><br />
+      <form name="form_id">
+        <input
+          name="textbox_id"
+          type="text"
+          id="answer"
+          placeholder="입력하세요."
+        />
+        <br />
+        <br />
+      </form>
+      <div class="action">
+        <button
+          type="button"
+          class="btn btn-primary"
+          name="button"
+          onclick="To_Noname();"
+          value="이동"
+        >
+          입력
+        </button>
+        <br />
+        <br />
+      </div>
+    </div>
+  </body>
+
+  <script language="javascript">
+    function To_Noname() {
+      if (document.form_id.textbox_id.value === "CANE") {
+        window.location.href = "findmycat_scene23.html"; //현재페이지의 주소를 해당페이지로 바꿉니다.
+      } else {
+        location.href = "noname3.html";
+      }
+    }
+  </script>
+</html>
